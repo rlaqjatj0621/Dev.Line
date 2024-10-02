@@ -244,6 +244,10 @@ a {
   transform: rotate(180deg);
 }
 
+main {
+  padding-top: 90px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
@@ -359,5 +363,9 @@ a {
 @media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
+  }
+
+  main {
+    padding-top: 58px;
   }
 }

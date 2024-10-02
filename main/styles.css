@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'ChosunGu';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+  font-family: "ChosunGu";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,9 +20,9 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -32,14 +33,14 @@
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1.3rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
 /*=============== BASE ===============*/
 * {
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -95,6 +96,7 @@ a {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: color 0.3s;
+  margin: 10px;
 }
 .nav__logo:hover {
   color: var(--first-color);
@@ -104,7 +106,8 @@ a {
   width: 32px;
   height: 32px;
 }
-.nav__toggle-menu, .nav__toggle-close {
+.nav__toggle-menu,
+.nav__toggle-close {
   font-size: 1.25rem;
   color: var(--title-color);
   position: absolute;
@@ -163,9 +166,6 @@ a {
 .join:hover {
   background-color: var(--first-color-lighten);
 }
-.small-padding {
-  padding: 1.25rem 0.1rem
-}
 /* Show menu */
 .show-menu {
   opacity: 1;
@@ -193,7 +193,9 @@ a {
   font-weight: initial;
   transition: transform 0.4s;
 }
-.dropdown__content, .dropdown__group, .dropdown__list {
+.dropdown__content,
+.dropdown__group,
+.dropdown__list {
   display: grid;
 }
 .dropdown__container {
@@ -262,8 +264,13 @@ a {
   }
   .nav__list {
     display: flex;
-    column-gap: 3rem;
     height: 100%;
+  }
+  .nav__list > li {
+    margin-left: 3rem;
+  }
+  .small-padding {
+    margin-left: 1rem;
   }
   .nav li {
     display: flex;
@@ -308,7 +315,8 @@ a {
     align-content: baseline;
     row-gap: 1.25rem;
   }
-  .dropdown__group:first-child, .dropdown__group:last-child {
+  .dropdown__group:first-child,
+  .dropdown__group:last-child {
     margin: 0;
   }
   .dropdown__list {
